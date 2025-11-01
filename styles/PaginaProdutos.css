@@ -1,0 +1,619 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #497C88;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Loading overlay (copied from PaginaDoUsuario.css) */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32,56,34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.loading-logo {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s infinite linear;
+}
+
+    #ParteDeCima {
+       z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: #20382200
+    }
+    #Folha{ 
+        z-index: 1;
+        height: 76px;
+        width: 76px;
+    }
+    #logo{
+        height: 66px;
+        width: 93px;
+    }
+       h3 {
+      font-weight: 800; /* Negrito */
+      font-style: ExtraBold; /* Extra Negrito */
+        font-size: 32px; /* Tamanho grande */ 
+    }
+        #Ecofy-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espaço entre o ícone e o texto */
+    }
+       #Ecofy-logo img {
+       margin-top: -18px;
+    }
+    #partedireita{
+        display: flex;
+        justify-content: space-between;
+    }
+    #perfil{
+        margin-right: 20px;
+        width: 71px;
+        height: 71px;
+    }
+    #whitecoin{
+        margin-top: -2px;
+        margin-right: 20px;
+        height: 72px;
+        width: 72px;
+    }
+    #bemvindo{
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        font-style: Semibold;
+         font-family: 'Montserrat';
+    }
+    #seta{
+        margin-top: 17px;
+        width: 36px;
+        height: 35px;
+    }
+
+#Main-container {
+    justify-content: space-around;
+    margin-top: -10px;
+    background-color: #77ABB7;
+    width: 100%;
+    min-height: 100vh;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#fundo-folhas {
+pointer-events: none;
+position: fixed;
+top: -5px;
+left: -5px;
+width: calc(100% + 10px);
+height: calc(100vh + 10px);
+object-fit: cover;
+z-index: 0;
+animation: floatingLeaves 6s ease-in-out infinite;
+}
+.dropdown-content #sair:hover{
+    background-color: rgba(255, 0, 0, 0.589);
+    border-radius: 5%;
+}
+.split-container {
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 100%; /* Alterado de 80vh para 100% */
+    overflow-y: auto; /* Permite rolagem vertical apenas dentro do container */
+}
+#lado-A, #lado-B {
+      z-index: -1;  
+    margin-top: -120px;
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#lado-A {
+    z-index: 1;
+}
+
+#lado-B {
+  z-index: 1;
+}
+
+#Ecsacoin-painel{
+    color: #497C88;
+    min-height: 720px;
+    min-width: 80vh;
+    max-width: 80vh;
+    max-height: 720px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 10vh;
+    margin-right: 23vh;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+hr{
+   border: 3px solid #77ABB7
+}
+#Iconegrande {
+    position: fixed; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: -20px;
+    border-radius: 50%;
+    animation: borderPulse 2s infinite;
+}
+#nome-perfil{
+    text-align: center;
+    color: #497C88;
+}
+
+#função-perfil{
+    margin-top: -3vh;
+    color: #77ABB7;
+    font-weight: 400;
+    text-align: center;
+}
+
+#linha-painel{
+    margin-top: 45vh;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+li { 
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #77ABB7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+th{
+    text-align: left;
+    font-size: 22px;
+    color: #497C88;
+    padding-bottom: 10px;
+}
+
+
+@keyframes borderPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(119, 171, 183, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(119, 171, 183, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(119, 171, 183, 0);
+    }
+}
+
+
+@keyframes borderPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(119, 171, 183, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(119, 171, 183, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(119, 171, 183, 0);
+    }
+}
+
+
+@keyframes borderPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(119, 171, 183, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(119, 171, 183, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(119, 171, 183, 0);
+    }
+}
+
+
+.icones-painel {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icones-painel:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+    50% { text-shadow: 0 0 20px rgba(255,255,255,0.8); }
+    100% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+}
+
+#number-cosin {
+    animation: glow 2s ease-in-out infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#Ecsacoin-painel, #Painel-usario {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes floatingLeaves {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(2px, 2px) rotate(1deg) scale(1.02);
+    }
+    50% {
+        transform: translate(-2px, 1px) rotate(-1deg) scale(1.03);
+    }
+    75% {
+        transform: translate(-1px, -1px) rotate(0.5deg) scale(1.02);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+
+#Folha {
+    z-index: 2;
+    height: 76px;
+    width: 76px;
+    transform-origin: center center; /* Garante que o zoom seja do centro */
+    animation: floatingLeaves 4s ease-in-out infinite;
+}
+.falling-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.leaf {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('../images/folha.png') no-repeat center center/contain;
+    filter: blur(2px) brightness(0.9);
+    opacity: 0.3;
+}
+
+.leaf:nth-child(1) { left: 10%; animation: falling 15s infinite linear; animation-delay: -2s; }
+.leaf:nth-child(2) { left: 30%; animation: falling 18s infinite linear; animation-delay: -4s; }
+.leaf:nth-child(3) { left: 50%; animation: falling 16s infinite linear; animation-delay: -7s; }
+.leaf:nth-child(4) { left: 70%; animation: falling 20s infinite linear; animation-delay: -5s; }
+.leaf:nth-child(5) { left: 85%; animation: falling 17s infinite linear; animation-delay: -3s; }
+.leaf:nth-child(6) { left: 95%; animation: falling 19s infinite linear; animation-delay: -6s; }
+
+@keyframes falling {
+    0% {
+        top: -10%;
+        transform: translateX(0) rotate(0deg) scale(0.8);
+    }
+    100% {
+        top: 110%;
+        transform: translateX(100px) rotate(360deg) scale(1.2);
+    }
+}
+
+/* Ajuste o z-index dos elementos existentes para ficarem acima das folhas */
+#Main-container {
+    position: relative;
+    z-index: 1;
+}
+
+#Ecsacoin-painel, #Painel-usario {
+    position: relative;
+    z-index: 2;
+}
+@keyframes gradientName {
+    0% {
+        background-position: 0% 50%;
+        text-shadow: 0 0 10px rgba(73, 124, 136, 0.2);
+    }
+    50% {
+        background-position: 100% 50%;
+        text-shadow: 0 0 15px rgba(73, 124, 136, 0.4);
+    }
+    100% {
+        background-position: 0% 50%;
+        text-shadow: 0 0 10px rgba(73, 124, 136, 0.2);
+    }
+}
+
+#nome-perfil {
+
+    background: linear-gradient(90deg, 
+        #497C88, 
+        #77ABB7, 
+        #497C88
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientName 3s ease-in-out infinite;
+}
+
+@keyframes coinFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+
+#legendone{
+    
+    color: white;
+    margin-top: 70px;
+    font-weight: 800;
+    font-size: 64px;
+}
+#legendtwo{
+   
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 11px;
+}
+.Ecocoin-logo{
+    display: flex;
+   padding: 1vw;
+    height: 7vh;
+    margin: 0;
+}
+#main-inter{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+}
+
+#qntcoins{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #497C88;
+    padding: 10px 20px;
+    height: 4vh;
+    width: 6vw;
+    border-radius: 10px;
+    animation: glow 2s ease-in-out infinite;
+}
+#points{
+    font-size: 2vw;
+}
+
+#coin-container{
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+
+
+.coin-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#pontos{
+    position: absolute;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: -7.5vh;
+    margin-right: -7.7vw;
+    font-weight: 400;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 7vw;
+    padding: 24px 140px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 0;
+    overflow: visible;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+footer {
+    background-color: #497C88;
+    color: white;
+    padding: 5vh;
+    padding-bottom: 4vh;
+    position: absolute;
+    width: 95%;
+
+}
+footer div {
+    display: flex;
+    margin-top: 1vh;
+    margin-left: 30vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+}
+.itensdiv{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 10px 20px 34px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    min-height: 370px;
+    position: relative;
+}
+
+.itemicone{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.valor-info{
+    padding: 12px 16px 0 16px;
+}
+.itemdescr{
+    color: #77ABB7;
+    font-size: 18px;
+    text-align: center;
+}
+.dropbtn {
+background-color: transparent;
+border: none;
+padding: 1.7vh;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+     opacity: 0;
+  transform: translateY(30px);
+  animation: slideFade 0.8s ease-out forwards;
+    margin-left: -2vw;
+    border-radius: 5%;
+display: none;
+position: absolute;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 20;
+background-color: #0747149a;
+}
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-content a {
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #ddd;
+font-weight: 600;
+}
+.dropdown-content #sair:hov{
+    background-color: rgba(255, 0, 0, 0.589);
+    border-radius: 5%;
+}
+.troca-imagem {
+width: 36px;
+height: 35px;
+background-color: transparent;
+}
+.troca-imagem:target {
+content: url("/assets/arrow_drop_down.svg");
+}
+.dropdown-content a:hover { background-color: #77ABB7;
+border-radius: 5%; }
+.dropdown:hover .dropbtn { background-color: transparent; }
+.produto-info{
+    padding: 6px 16px 12px 16px;
+}
+.itemdescr2{
+    color:#497C88;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.div-resgat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #497C88;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.but-resgat{
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+}
+

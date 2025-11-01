@@ -1,0 +1,30 @@
+#menu {
+    float: left;
+    margin-top: 90px;
+    width: 450px;
+}
+
+#menu a:hover {    color: #f41b1b;
+}
+
+#menu ul {
+    list-style: none;
+    background: linear-gradient(to bottom, #ddd, #000000);
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu li {
+    height: 57px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    border: 1px solid rgb(248, 9, 9);
+}
+
+#menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}

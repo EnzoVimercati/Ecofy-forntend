@@ -1,0 +1,478 @@
+body {
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+color: #ffffff;
+background-color: #497C88;
+height: 100vh;
+overflow: hidden;
+}
+#ParteDeCima {
+z-index: -1;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+padding-left: 50px;
+padding-right: 50px;
+background-color: #20382200;
+}
+#Folha {
+z-index: 2;
+height: 76px;
+width: 76px;
+}
+#logo {
+height: 66px;
+width: 93px;
+}
+h3 {
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 32px;
+}
+#Ecofy-logo {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+#Ecofy-logo img {
+pointer-events: none;
+margin-top: -18px;
+}
+#partedireita {
+display: flex;
+justify-content: space-between;
+}
+#perfil {
+pointer-events: none;
+margin-right: 20px;
+width: 71px;
+height: 71px;
+}
+#presente {
+margin: 10px;
+height: 50px;
+width: 75px;
+}
+#bemvindo {
+margin-top: 20px;
+font-size: 24px;
+font-weight: 600;
+font-style: Semibold;
+font-family: 'Montserrat';
+}
+#seta {
+margin-top: 17px;
+width: 36px;
+height: 35px;
+}
+#Main-container {
+margin-top: -10px;
+background-color: #77ABB7;
+width: 100%;
+height: 100%;
+position: relative;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+padding: 5px;
+box-sizing: border-box;
+overflow: hidden;
+}
+.split-container {
+z-index: -1;
+display: flex;
+width: 100%;
+height: 100%;
+overflow-y: auto;
+}
+#lado-A, #lado-B {
+z-index: -1;
+margin-top: -120px;
+flex: 1;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+#lado-A {
+z-index: 1;
+}
+#lado-B {
+z-index: 1;
+}
+#Ecsacoin-painel {
+color: #497C88;
+height: 72vh;
+width: 40vw;
+border-radius: 10px;
+background-color: #ffffff;
+margin-top: 10vh;
+margin-right: 23vh;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#Painel-usario {
+display: table;
+align-items: center;
+max-width: 56vh;
+max-height: 720px;
+border-radius: 10px;
+background-color: #ffffff;
+margin-top: 10vh;
+margin-left: 20vh;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#partesuperiorpainel {
+display: flex;
+justify-content: space-around;
+}
+#Ecocoin-logo {
+pointer-events: none;
+display: flex;
+align-items: center;
+margin-left: -2vh;
+}
+#Ecocoin-logo h3 {
+margin-left: 10px;
+}
+#number-cosin {
+width: 69px;
+height: 27px;
+margin-left: 30vh;
+background-color: #497C88;
+color: #ffffff;
+padding: 8px;
+border-radius: 5px;
+font-size: 22px;
+margin-top: 2.9vh;
+text-align: center;
+}
+hr {
+border: 3px solid #77ABB7;
+}
+#Iconegrande {
+    width: 35vh;
+    position: fixed; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: -20px;
+    border-radius: 50%;
+    animation: borderPulse 2s infinite;
+}
+#nome-perfil {
+text-align: center;
+color: #497C88;
+}
+#painelnomfun {
+position: fixed;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 31vh;
+background-color: transparent;
+font-size: 50px;
+}
+#função-perfil {
+margin-top: -3vh;
+color: #77ABB7;
+font-weight: 400;
+text-align: center;
+font-size: 24px;
+}
+#info-painel {
+position: fixed;
+display: flex;
+align-items: center;
+gap: 20px;
+margin-top: 17vh;
+margin-left: -3vh;
+}
+#linha-painel {
+margin-top: 45vh;
+}
+.icones-painel {
+width: 24px;
+height: 24px;
+}
+#Infor-pessoais {
+font-size: 22px;
+font-weight: 700;
+color: #497C88;
+margin: 7vh;
+margin-left: 9vh;
+padding-right: 1.8vh;
+}
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+align-items: center;
+}
+li {
+margin-bottom: 15px;
+font-size: 24px;
+color: #77ABB7;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+th {
+text-align: left;
+font-size: 22px;
+color: #497C88;
+padding-bottom: 10px;
+}
+#parteinferiorpainel {
+border-collapse: collapse;
+padding: 6px;
+display: flex;
+justify-content: space-around;
+}
+@keyframes borderPulse {
+0% { box-shadow: 0 0 0 0 rgba(119,171,183,0.7); }
+70% { box-shadow: 0 0 0 10px rgba(119,171,183,0); }
+100% { box-shadow: 0 0 0 0 rgba(119,171,183,0); }
+}
+.space {
+padding-left: 10vh;
+padding-right: 15vh;
+}
+.icones-painel {
+transition: transform 0.2s ease, filter 0.2s ease;
+}
+.icones-painel:hover {
+transform: scale(1.1);
+filter: brightness(1.2);
+}
+@keyframes glow {
+0% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+50% { text-shadow: 0 0 20px rgba(255,255,255,0.8); }
+100% { text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+}
+#number-cosin {
+animation: glow 2s ease-in-out infinite;
+}
+.loading-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(32,56,34);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+td {
+padding-top: 20px;
+padding-left: 20px;
+padding-bottom: 15px;
+font-weight: 500;
+font-size: 22px;
+color: #77ABB7;
+border-bottom: rgba(0,0,0,0.068) 2px solid;
+}
+.loading-logo {
+width: 100px;
+height: 100px;
+animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+#Ecsacoin-painel, #Painel-usario {
+animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes floatingLeaves {
+0% { transform: translate(0,0) rotate(0deg) scale(1); }
+25% { transform: translate(2px,2px) rotate(1deg) scale(1.02); }
+50% { transform: translate(-2px,1px) rotate(-1deg) scale(1.03); }
+75% { transform: translate(-1px,-1px) rotate(0.5deg) scale(1.02); }
+100% { transform: translate(0,0) rotate(0deg) scale(1); }
+}
+.dropdown-content #sair:hover{
+    background-color: rgba(255, 0, 0, 0.589);
+    border-radius: 5%;
+}
+#fundo-folhas {
+pointer-events: none;
+position: fixed;
+top: -5px;
+left: -5px;
+width: calc(100% + 10px);
+height: calc(100vh + 10px);
+object-fit: cover;
+z-index: 0;
+animation: floatingLeaves 6s ease-in-out infinite;
+}
+th {
+position: sticky;
+top: 0;
+background-color: white;
+box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1);
+padding: 15px;
+border: 1px;
+}
+#parteinferiorpainel {
+padding: 30px;
+}
+#Folha {
+pointer-events: none;
+z-index: 2;
+height: 76px;
+width: 76px;
+transform-origin: center center;
+animation: floatingLeaves 4s ease-in-out infinite;
+}
+.falling-leaves {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+z-index: 0;
+pointer-events: none;
+}
+.leaf {
+position: absolute;
+width: 40px;
+height: 40px;
+background: url('../images/folha.png') no-repeat center center/contain;
+filter: blur(2px) brightness(0.9);
+opacity: 0.3;
+}
+.leaf:nth-child(1) { left: 10%; animation: falling 15s infinite linear; animation-delay: -2s; }
+.leaf:nth-child(2) { left: 30%; animation: falling 18s infinite linear; animation-delay: -4s; }
+.leaf:nth-child(3) { left: 50%; animation: falling 16s infinite linear; animation-delay: -7s; }
+.leaf:nth-child(4) { left: 70%; animation: falling 20s infinite linear; animation-delay: -5s; }
+.leaf:nth-child(5) { left: 85%; animation: falling 17s infinite linear; animation-delay: -3s; }
+.leaf:nth-child(6) { left: 95%; animation: falling 19s infinite linear; animation-delay: -6s; }
+@keyframes falling {
+0% { top: -10%; transform: translateX(0) rotate(0deg) scale(0.8); }
+100% { top: 110%; transform: translateX(100px) rotate(360deg) scale(1.2); }
+}
+#Main-container {
+position: relative;
+z-index: 1;
+}
+#Ecsacoin-painel, #Painel-usario {
+position: relative;
+z-index: 2;
+}
+@keyframes gradientName {
+0% { background-position: 0% 50%; text-shadow: 0 0 10px rgba(73,124,136,0.2); }
+50% { background-position: 100% 50%; text-shadow: 0 0 15px rgba(73,124,136,0.4); }
+100% { background-position: 0% 50%; text-shadow: 0 0 10px rgba(73,124,136,0.2); }
+}
+#nome-perfil {
+background: linear-gradient(90deg, #497C88, #77ABB7, #497C88);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradientName 3s ease-in-out infinite;
+}
+@keyframes coinFloat {
+0%,100% { transform: translateY(0px); }
+50% { transform: translateY(-5px); }
+}
+@keyframes textShine {
+0% { background-position: 0% 50%; }
+100% { background-position: 200% 50%; }
+}
+#parteinferiorpainel {
+max-height: 53vh;
+overflow-y: auto;
+}
+#parteinferiorpainel::-webkit-scrollbar { display: none; }
+#Ecocoin-logo {
+pointer-events: none;
+display: flex;
+align-items: center;
+margin-left: -2vh;
+position: relative;
+}
+#Ecocoin-logo img {
+pointer-events: none;
+animation: coinFloat 3s ease-in-out infinite;
+filter: drop-shadow(0 4px 6px rgba(73,124,136,0.3));
+transition: transform 0.3s ease;
+}
+#Ecocoin-logo img:hover {
+pointer-events: none;
+transform: rotate(15deg) scale(1.1);
+}
+.dropbtn {
+background-color: transparent;
+border: none;
+padding: 1.7vh;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+     opacity: 0;
+  transform: translateY(30px);
+  animation: slideFade 0.8s ease-out forwards;
+    margin-left: -2vw;
+    border-radius: 5%;
+display: none;
+position: absolute;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 20;
+background-color: #0747149a;
+}
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-content a {
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+color: #ddd;
+font-weight: 600;
+}
+.dropdown-content #sair:hov{
+    background-color: rgba(255, 0, 0, 0.589);
+    border-radius: 5%;
+}
+.troca-imagem {
+width: 36px;
+height: 35px;
+background-color: transparent;
+}
+.troca-imagem:target {
+content: url("/assets/arrow_drop_down.svg");
+}
+.dropdown-content a:hover { background-color: #77ABB7;
+border-radius: 5%; }
+.dropdown:hover .dropbtn { background-color: transparent; }
+#Ecocoin-logo h3 {
+margin-left: 10px;
+background: linear-gradient(90deg,#497C88,#77ABB7,#497C88,#77ABB7);
+background-size: 300% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textShine 4s linear infinite;
+font-weight: 800;
+letter-spacing: 1px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}

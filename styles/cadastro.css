@@ -1,0 +1,71 @@
+@import url('/styles/LoginPageStyle.css');
+
+#formulario {
+    margin-top: -50px;
+}
+
+#text-title {
+    font-size: 110px;
+}
+
+#formulario-A {
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+}
+
+#formulario-A div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Texts-input {
+    height: 2vw;
+    margin-bottom: 15px;
+}
+
+#formulario-B {
+    margin-bottom: -15vh;
+}
+
+@media (max-height: 800px) {
+    #formulario {
+        margin-top: -80px;
+        transform: scale(0.95);
+    }
+    
+    .Texts-input {
+        height: 55px;
+        margin-bottom: 12px;
+    }
+    
+    #text-title {
+        font-size: 100px;
+    }
+}
+
+#text-body {
+    font-size: 32px;
+}
+
+P {
+    margin: 0;
+    padding: 0;
+}
+
+.button-2 {
+    background-color: #ffffff;
+    color: #203822;
+    border: 2px solid #203822;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
